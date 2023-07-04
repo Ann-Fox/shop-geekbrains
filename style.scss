@@ -81,6 +81,15 @@ a {
   }
 }
 
+#burger {
+  // position: absolute;
+  // left: -9999999px;
+  // visibility: hidden;
+  &:checked ~ .menu {
+    display: -232px;
+  }
+}
+
 .top {
   background: #f1e4e6;
   display: flex;
@@ -167,9 +176,9 @@ a {
   }
 }
 
-.hidden {
-  display: none;
-}
+// .hidden {
+//   display: none;
+// }
 
 li {
   margin-left: 21.5px;
