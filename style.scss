@@ -85,6 +85,7 @@ a {
   // position: absolute;
   // left: -9999999px;
   // visibility: hidden;
+
   &:checked ~ .menu {
     display: -232px;
   }
@@ -135,7 +136,7 @@ a {
   padding-bottom: 32px;
 
   width: 232px;
-  height: 634px;
+  // height: 634px;
   display: flex;
   gap: 20px;
   flex-direction: column;
