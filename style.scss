@@ -81,15 +81,15 @@ a {
   }
 }
 
-#burger {
-  // position: absolute;
-  // left: -9999999px;
-  // visibility: hidden;
+// #burger {
+// position: absolute;
+// left: -9999999px;
+// visibility: hidden;
 
-  &:checked ~ .menu {
-    display: -232px;
-  }
-}
+//   &:checked ~ .menu {
+//     display: -232px;
+//   }
+// }
 
 .top {
   background: #f1e4e6;
@@ -177,9 +177,9 @@ a {
   }
 }
 
-// .hidden {
-//   display: none;
-// }
+.hidden {
+  display: none;
+}
 
 li {
   margin-left: 21.5px;
@@ -310,19 +310,21 @@ li {
     line-height: 19px;
 
     border: 1px solid $accentColor;
-    color: $accentColor;
 
     background: #ffffff;
     padding: 15px 39px 14px;
-
+    & a {
+      color: $accentColor;
+    }
+    & a:hover {
+      color: #ffffff;
+    }
     /* animation: heartbeat 3s ease-in-out infinite both; */
   }
 
   &__btn:hover {
     background: $accentColor;
     border: 1px solid $accentColor;
-
-    color: #ffffff;
   }
 }
 

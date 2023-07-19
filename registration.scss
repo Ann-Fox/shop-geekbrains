@@ -135,7 +135,7 @@ li {
       background-color: $accentColor;
       border: 1px solid $accentColor;
       color: #fff;
-          
+
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -148,19 +148,19 @@ li {
       justify-content: center;
       padding-top: 16px;
       padding-bottom: 17px;
-      
-      transition: background-color 1s, color 1s; 
-}
-&__btn path {
-  transition: fill 1s;
-}
-    
+
+      transition: background-color 1s, color 1s;
+    }
+    &__btn path {
+      transition: fill 1s;
+    }
+
     &__btn:hover {
       background-color: #fff;
       color: $accentColor;
       border: 1px solid $accentColor;
       cursor: pointer;
-      transition: background-color 1s, color 1s;      
+      transition: background-color 1s, color 1s;
     }
     &__btn:hover path {
       fill: $accentColor;
@@ -168,41 +168,41 @@ li {
     }
   }
 
-&__right {
-  width: 652px;
-  &__title {
-    color: $colorText;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  &__right {
+    width: 652px;
+    &__title {
+      color: $colorText;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__text {
+      color: $colorText;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 22px;
+      margin-bottom: 21px;
+    }
+    &__ul {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+    }
+    &__li {
+      color: $colorText;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__li::before {
+      content: url(img/registration__li.svg);
+      padding-right: 23px;
+    }
   }
-  &__text {
-    color: $colorText;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 22px;
-    margin-bottom: 21px;
-  }
-  &__ul {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-  }
-  &__li {
-    color: $colorText;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  &__li::before {
-    content: url(img/registration__li.svg);
-    padding-right: 23px;
-  }
-}
 }
 
 .bottom {
@@ -306,7 +306,6 @@ li {
     cursor: pointer;
     color: $accentColor;
     background-color: #e1e1e1;
-
   }
 }
 
@@ -335,7 +334,6 @@ li {
   &__sotial:hover path:last-child {
     fill: #fff;
     transition: fill 1s;
-
   }
 }
 
@@ -345,26 +343,22 @@ li {
     padding-right: calc(50% - 368px);
   }
 
-  .top {
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
 
-    &__img {
-      width: 386px;
-    }
+  .registration {
+    gap: 22px;
 
-    &__info {
-      margin-left: 39px;
-    }
+    &__right {
+      width: 354px;
 
-    &__title {
-      font-size: 44px;
-      line-height: 53px;
-    }
-
-    &__subtitle {
-      font-size: 24px;
-      line-height: 29px;
+      &__title {
+        font-size: 16px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+      &__li {
+        font-size: 16px;
+      }
     }
   }
 
@@ -389,8 +383,8 @@ li {
 
 @media /*(min-width: 320px) and */ (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
 
   .header__none {
@@ -398,69 +392,23 @@ li {
   }
 
   .top {
-    padding-left: calc(50% - 131px);
-    padding-right: calc(50% - 131px);
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .top {
-    &__img {
-      display: none;
-    }
-
-    &__info {
-      margin-top: 148px;
-      margin-bottom: 149px;
-    }
-
-    &__title {
-      font-size: 38px;
-      line-height: 46px;
-    }
-
-    &__subtitle {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-
-  .sale {
-    gap: 32px;
-    grid-template-columns: repeat(1, 1fr);
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    &__img {
-      width: 100%;
-    }
-
-    &__item_big {
-      display: flex;
-
-      overflow: hidden;
-      justify-content: center;
-    }
-
-    &__img_big {
-      height: 111px;
-    }
-  }
-
-  .catalog__items {
-    gap: 16px;
-    grid-template-columns: repeat(1, 360px);
     justify-content: center;
-    margin-bottom: 40px;
   }
 
-  .benefits {
-    padding-top: 48px;
-    padding-bottom: 81px;
-    gap: 47px;
-    grid-template-columns: repeat(1, 1fr);
+  .registration {
+    flex-direction: column;
+    &__right {
+      width: 359px;
+      &__title {
+        font-size: 16px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+      &__li {
+        font-size: 16px;
+      }
+    }
   }
 
   .bottom {

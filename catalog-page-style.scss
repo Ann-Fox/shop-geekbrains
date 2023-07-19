@@ -133,12 +133,14 @@ li {
 
 .collection-img {
   background-color: #f7f7f7;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 11px;
-  padding-bottom: 42px;
 
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 11px;
+    padding-bottom: 42px;
+  }
   &__arrow {
     padding: 8px;
     background: rgba(42, 42, 42, 0.15);
@@ -418,50 +420,27 @@ li {
     padding-right: calc(50% - 368px);
   }
 
-  .top {
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
-
-    &__img {
-      width: 386px;
-    }
-
-    &__info {
-      margin-left: 39px;
-    }
-
-    &__title {
-      font-size: 44px;
-      line-height: 53px;
-    }
-
-    &__subtitle {
-      font-size: 24px;
-      line-height: 29px;
-    }
+  .bottom-cart {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .sale {
-    gap: 20px;
-    padding-bottom: 110px;
-    padding-top: 65px;
-    padding-bottom: 110px;
+  .cart {
+    padding: 65px 0;
+    margin-top: 0;
+    // max-width: 768px;
 
-    &__img {
-      width: 232px;
-    }
-
-    &__img_big {
-      width: 735px;
+    &__text {
+      max-width: 555px;
     }
   }
-
-  .catalog__items {
+  .catalog {
     gap: 16px;
-    grid-template-columns: repeat(2, 360px);
-    margin-bottom: 32px;
   }
-
+  .hidden {
+    display: none;
+  }
   .benefits {
     padding-top: 48px;
     padding-bottom: 64px;
@@ -483,8 +462,8 @@ li {
 
 @media /*(min-width: 320px) and */ (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
 
   .header__none {
@@ -494,6 +473,11 @@ li {
   .top {
     padding-left: calc(50% - 131px);
     padding-right: calc(50% - 131px);
+
+    padding-top: 24px;
+    padding-bottom: 46px;
+    gap: 32px;
+    flex-direction: column;
   }
 
   .menu {
@@ -521,33 +505,25 @@ li {
     }
   }
 
-  .sale {
-    gap: 32px;
-    grid-template-columns: repeat(1, 1fr);
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    &__img {
-      width: 100%;
-    }
-
-    &__item_big {
-      display: flex;
-
-      overflow: hidden;
-      justify-content: center;
-    }
-
-    &__img_big {
-      height: 111px;
-    }
+  .bottom-cart {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .catalog__items {
-    gap: 16px;
-    grid-template-columns: repeat(1, 360px);
-    justify-content: center;
-    margin-bottom: 40px;
+  .cart {
+    padding: 65px 0;
+     margin-top: 0;
+  }
+  .catalog {
+    margin-bottom: 64px;
+    margin-top: 64px;
+    flex-direction: column;
+    gap: 0;
+  &__item {
+    width: 100%; 
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
   }
 
   .benefits {

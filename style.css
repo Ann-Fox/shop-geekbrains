@@ -59,10 +59,6 @@ a {
   align-items: center;
 }
 
-#burger:checked ~ .menu {
-  display: -232px;
-}
-
 .top {
   background: #f1e4e6;
   display: flex;
@@ -130,6 +126,10 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+}
+
+.hidden {
+  display: none;
 }
 
 li {
@@ -241,15 +241,19 @@ li {
   font-size: 16px;
   line-height: 19px;
   border: 1px solid #f16d7f;
-  color: #f16d7f;
   background: #ffffff;
   padding: 15px 39px 14px;
   /* animation: heartbeat 3s ease-in-out infinite both; */
 }
+.catalog__btn a {
+  color: #f16d7f;
+}
+.catalog__btn a:hover {
+  color: #ffffff;
+}
 .catalog__btn:hover {
   background: #f16d7f;
   border: 1px solid #f16d7f;
-  color: #ffffff;
 }
 
 .benefits {

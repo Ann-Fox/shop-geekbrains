@@ -114,6 +114,8 @@ li {
 
 .collection-img {
   background-color: #f7f7f7;
+}
+.collection-img__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -358,40 +360,23 @@ li {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
   }
-  .top {
-    padding-left: calc(50% - 368px);
-    padding-right: calc(50% - 368px);
+  .bottom-cart {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .top__img {
-    width: 386px;
+  .cart {
+    padding: 65px 0;
+    margin-top: 0;
   }
-  .top__info {
-    margin-left: 39px;
+  .cart__text {
+    max-width: 555px;
   }
-  .top__title {
-    font-size: 44px;
-    line-height: 53px;
-  }
-  .top__subtitle {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .sale {
-    gap: 20px;
-    padding-bottom: 110px;
-    padding-top: 65px;
-    padding-bottom: 110px;
-  }
-  .sale__img {
-    width: 232px;
-  }
-  .sale__img_big {
-    width: 735px;
-  }
-  .catalog__items {
+  .catalog {
     gap: 16px;
-    grid-template-columns: repeat(2, 360px);
-    margin-bottom: 32px;
+  }
+  .hidden {
+    display: none;
   }
   .benefits {
     padding-top: 48px;
@@ -412,8 +397,8 @@ li {
 }
 @media (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
   .header__none {
     display: none;
@@ -421,6 +406,10 @@ li {
   .top {
     padding-left: calc(50% - 131px);
     padding-right: calc(50% - 131px);
+    padding-top: 24px;
+    padding-bottom: 46px;
+    gap: 32px;
+    flex-direction: column;
   }
   .menu {
     display: none;
@@ -440,28 +429,24 @@ li {
     font-size: 20px;
     line-height: 24px;
   }
-  .sale {
-    gap: 32px;
-    grid-template-columns: repeat(1, 1fr);
-    padding-top: 64px;
-    padding-bottom: 64px;
+  .bottom-cart {
+    padding-left: 0;
+    padding-right: 0;
   }
-  .sale__img {
+  .cart {
+    padding: 65px 0;
+    margin-top: 0;
+  }
+  .catalog {
+    margin-bottom: 64px;
+    margin-top: 64px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .catalog__item {
     width: 100%;
-  }
-  .sale__item_big {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-  }
-  .sale__img_big {
-    height: 111px;
-  }
-  .catalog__items {
-    gap: 16px;
-    grid-template-columns: repeat(1, 360px);
-    justify-content: center;
-    margin-bottom: 40px;
+    flex-direction: column;
+    margin-bottom: 0px;
   }
   .benefits {
     padding-top: 48px;

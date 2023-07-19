@@ -157,6 +157,9 @@ li {
   gap: 11px;
   padding-left: 16px;
 }
+.filter__mobile {
+  display: none;
+}
 .filter__head {
   color: #000;
   font-size: 14px;
@@ -454,22 +457,14 @@ li {
     font-size: 24px;
     line-height: 29px;
   }
-  .sale {
-    gap: 20px;
-    padding-bottom: 110px;
-    padding-top: 65px;
-    padding-bottom: 110px;
+  .filter__mobile {
+    display: none;
   }
-  .sale__img {
-    width: 232px;
-  }
-  .sale__img_big {
-    width: 735px;
-  }
-  .catalog__items {
+  .catalog {
     gap: 16px;
-    grid-template-columns: repeat(2, 360px);
-    margin-bottom: 32px;
+  }
+  .catalog__item:nth-child(3) {
+    display: none;
   }
   .benefits {
     padding-top: 48px;
@@ -490,8 +485,8 @@ li {
 }
 @media (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 188px);
-    padding-right: calc(50% - 188px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
   .header__none {
     display: none;
@@ -503,43 +498,37 @@ li {
   .menu {
     display: none;
   }
-  .top__img {
+  .top {
+    padding-top: 24px;
+    padding-bottom: 46px;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .filter-sort {
+    height: 80px;
+    padding-top: 11px;
+  }
+  .filter__summary {
+    padding-left: 0;
+  }
+  .filter__head {
     display: none;
   }
-  .top__info {
-    margin-top: 148px;
-    margin-bottom: 149px;
+  .filter__desktop {
+    display: none;
   }
-  .top__title {
-    font-size: 38px;
-    line-height: 46px;
+  .filter__mobile {
+    display: block;
   }
-  .top__subtitle {
-    font-size: 20px;
-    line-height: 24px;
+  .sort {
+    gap: 24px;
   }
-  .sale {
-    gap: 32px;
-    grid-template-columns: repeat(1, 1fr);
-    padding-top: 64px;
-    padding-bottom: 64px;
+  .sort__summary {
+    gap: 9px;
   }
-  .sale__img {
-    width: 100%;
-  }
-  .sale__item_big {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-  }
-  .sale__img_big {
-    height: 111px;
-  }
-  .catalog__items {
-    gap: 16px;
-    grid-template-columns: repeat(1, 360px);
-    justify-content: center;
-    margin-bottom: 40px;
+  .sort__heading {
+    font-size: 12px;
   }
   .benefits {
     padding-top: 48px;
@@ -548,15 +537,24 @@ li {
     grid-template-columns: repeat(1, 1fr);
   }
   .bottom {
-    padding-top: 64px;
-    padding-bottom: 110px;
-    gap: 59px;
     flex-direction: column;
+    padding-top: 54px;
+    padding-bottom: 109px;
+    gap: 59px;
+  }
+  .bottom__left__content {
+    font-size: 18px;
+  }
+  .bottom__rigth {
+    gap: 22px;
+  }
+  .bottom__rigth__title {
+    font-size: 14px;
   }
   .footer {
-    padding-bottom: 9px;
-    padding-top: 43px;
-    gap: 40px;
+    display: flex;
+    padding-bottom: 24px;
+    gap: 25px;
     flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=catalog-style.css.map */
