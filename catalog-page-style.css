@@ -429,6 +429,9 @@ li {
     font-size: 20px;
     line-height: 24px;
   }
+  .collection-img__content__slide {
+    max-width: 60%;
+  }
   .bottom-cart {
     padding-left: 0;
     padding-right: 0;
@@ -436,6 +439,12 @@ li {
   .cart {
     padding: 65px 0;
     margin-top: 0;
+  }
+  .cart__line {
+    max-width: 80%;
+  }
+  .cart__sort__link {
+    font-size: 10px;
   }
   .catalog {
     margin-bottom: 64px;
